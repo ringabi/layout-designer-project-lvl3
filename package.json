@@ -2,7 +2,7 @@
   "name": "layout-designer-project-lvl3",
   "version": "1.0.0",
   "description": "third educational project 'Messenger Hexlet Chat'",
-  "main": "index.js",
+  "main": "./dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,5 +34,9 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "pug": "^3.0.0"
   }
 }

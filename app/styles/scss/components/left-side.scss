@@ -1,0 +1,5 @@
+.left-side {
+  height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
+  background: white;
+  border-radius: 0 0 0 1rem;
+}

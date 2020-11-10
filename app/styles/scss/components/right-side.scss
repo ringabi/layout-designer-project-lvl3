@@ -1,0 +1,5 @@
+.right-side {
+  height: calc(100vh - (2 * #{$frame-thickness}));
+  background: white;
+  border-radius: 0 1rem 1rem 0;
+}
