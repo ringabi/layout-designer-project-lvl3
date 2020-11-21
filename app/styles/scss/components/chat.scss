@@ -1,0 +1,31 @@
+.chat {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  width: calc(min(80.5vw, 416px));
+  height: 91px;
+  background: $body-bg;
+  color: $dark;
+  border-right: $border-width * 0.5 solid $border-color;
+  border-bottom: $border-width * 2 solid $border-color;
+  border-left: $border-width * 0.5 solid $border-color;
+  border-radius: $border-radius;
+
+  & :hover {
+    background: $component-active-bg;
+    color: $component-active-color;
+    mix-blend-mode: normal;
+  }
+
+  & .chat-text {
+    padding: map-get($spacers, 4);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media(min-width: 576px) {
+  .contact {  
+    width: 416px;
+  }
+}

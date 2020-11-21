@@ -1,4 +1,11 @@
-.desktop-frame {
-  border: $frame-thickness solid $gray;
-  background: $gray;
+desktop-frame {
+  displa: none;
+
+}
+
+@media(min-width: 576px) {
+  .desktop-frame {
+    border: $frame-thickness solid $gray;
+    background: $gray;
+  }
 }

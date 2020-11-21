@@ -1,4 +1,5 @@
 $gray: #efefef;
+
 $primary: #4545a5;
 $secondary: #6c757d;
 $success: #28a745;
@@ -8,7 +9,16 @@ $danger: #dc3545;
 $light: #fbfbfb;
 $dark: #343a40;
 
-$theme-colors: $gray, $primary, $secondary, $success, $info, $warning, $danger, $light, $dark;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+) !default;
 
 $frame-thickness: 24px;
 $header-height: 72px;

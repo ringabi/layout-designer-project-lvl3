@@ -1,3 +1,4 @@
+
 @import 'components/custom';
 @import 'variables';
 
@@ -5,3 +6,12 @@
 @import 'components/header';
 @import 'components/left-side';
 @import 'components/right-side';
+@import 'components/contact';
+@import 'components/chat';
+@import 'components/forms';
+
+@import 'utilities/filter-invert';
+@import 'utilities/spacing';
+@import 'utilities/border-radius';
+
+@import 'mixins/hide-scrollbar';

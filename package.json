@@ -36,7 +36,9 @@
     "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
     "pug": "^3.0.0"
   }
 }

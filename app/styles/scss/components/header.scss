@@ -1,6 +1,12 @@
 .header {
-  width: 464px;
+  width: calc(min(100vw, 414px));
   height: $header-height;
   background: $primary;
-  border-radius: 1rem 0 0 0;
+}
+
+@media(min-width: 576px) {
+  .header {
+    width: 464px;
+    border-radius: 1rem 0 0 0;
+  }
 }

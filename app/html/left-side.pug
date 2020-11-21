@@ -1,1 +1,76 @@
-section.left-side.pt-5.px-4.col-12.border-right.border-gray Левая область однако
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "app/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "app/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "app/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "app/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "app/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "app/images/avatar_6.jpg"
+    }],
+  }
+
+
+section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-column(id="nav-tabContent")
+  div.tab-pane.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+    h1.h2.font-weight-bold.text-dark Контакты
+    input.search-panel.text-primary(type="search" placeholder="Поиск по контактам")
+    each array, alphabet in contacts
+      div.text-muted.mt-5= alphabet
+        each index in array
+          div.contact.mt-5.mb-3
+           a.d-flex.flex-row.align-items-center(href="#")
+            img.border-radius-50.my-4.ml-3(src=index.avatar width="50" height="50")
+            div.contact-text.p-4.text-dark
+              div.font-weight-bold= index.name
+              small= index.status
+  div.tab-pane(id="chats" role="tabpanel" aria-labelledby="chats-tab")
+    h1.h2.font-weight-bold.text-dark Чаты
+    input.search-panel.text-primary(type="search" placeholder="Поиск по сообщениям")
+    div.chat.mt-5.mb-3
+      a.d-flex.flex-row.align-items-center(href="#")
+        img.border-radius-50.my-4.ml-3(src="app/images/avatar_4.jpg" width="50" height="50")
+        div.chat-text.p-4.text-dark
+          span.font-weight-bold Вениамин Редакторович
+          span 11:45
+          small.d-block.text-truncate o_O
+    div.chat.mt-5.mb-3
+      a.d-flex.flex-row.align-items-center(href="#")
+        img.border-radius-50.my-4.ml-3(src="app/images/avatar_2.jpg" width="50" height="50")
+        div.chat-text.p-4.text-dark
+          span.font-weight-bold Джедай Падаванов
+          span 10:12
+          small.d-block.text-truncate Привет, скоро третий проект? Уже скоро надо будет выложить
+    div.chat.mt-5.mb-3
+      a.d-flex.flex-row.align-items-center(href="#")
+        img.border-radius-50.my-4.ml-3(src="app/images/avatar_3.jpg" width="50" height="50")
+        div.chat-text.p-4.text-dark
+          span.font-weight-bold Алексей Примадонин
+          span 08:53
+          small.d-block.text-truncate Тесты упали >_<

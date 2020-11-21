@@ -1,5 +1,21 @@
+@mixin hide-scrollbar() {
+	  & {
+		      -ms-overflow-style: none;
+		          scrollbar-width: none;
+
+			      overflow-y: auto;
+			          overflow-x: hidden;
+				    }
+
+				      &::-webkit-scrollbar {
+					          display: none;
+						    }
+					    }
+
 .left-side {
   height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
   background: white;
   border-radius: 0 0 0 1rem;
+  fle: 0 1 414px;
+  @include hide-scrollbar();
 }
