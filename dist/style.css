@@ -7855,3 +7855,7 @@ desktop-frame {
 
 .border-radius-50 {
   border-radius: 50px; }
+
+@media (min-width: 576px) {
+  .w-sm-414px {
+    width: 414px; } }
