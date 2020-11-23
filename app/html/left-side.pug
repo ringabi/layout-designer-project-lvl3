@@ -37,10 +37,11 @@
   }
 
 
-section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-column(id="nav-tabContent")
+section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom(id="nav-tabContent")
   div.tab-pane.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
-    h1.h2.font-weight-bold.text-dark Контакты
-    input.search-panel.text-primary(type="search" placeholder="Поиск по контактам")
+    form.form-group
+      label.h2.text-dark.font-weight-bold(for="inputContact") Контакты
+      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
@@ -51,8 +52,9 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
               div.font-weight-bold= index.name
               small= index.status
   div.tab-pane(id="chats" role="tabpanel" aria-labelledby="chats-tab")
-    h1.h2.font-weight-bold.text-dark Чаты
-    input.search-panel.text-primary(type="search" placeholder="Поиск по сообщениям")
+    form.form-group
+      label.h2.text-dark.font-weight-bold(for="inputContact") Чаты
+      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по сообщениям" id="inputContact")
     div.chat.mt-5.mb-3
       a.d-flex.flex-row.align-items-center(href="#")
         img.border-radius-50.my-4.ml-3(src="app/images/avatar_4.jpg" width="50" height="50")
@@ -75,8 +77,9 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
           span 08:53
           small.d-block.text-truncate Тесты упали >_<
   div.tab-pane.w-sm-414px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
-    h1.h2.font-weight-bold.text-dark Профиль
-    input.search-panel.text-primary(type="search" placeholder="Поиск по сообщениям")
+    form.form-group
+      label.h2.text-dark.font-weight-bold(for="inputContact") Профиль
+      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по сообщениям" id="inputContact")
     div.card.mb-3.mt-5.border-0
       div.d-flex.justify-content-center
         img.card-img-center.border-radius-50(src="./app/images/avatar_1.jpg" alt="domovenock" width="90" height="90")
