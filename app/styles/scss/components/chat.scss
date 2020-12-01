@@ -21,11 +21,12 @@
     padding: map-get($spacers, 4);
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 77vw;
   }
 }
 
 @media(min-width: 576px) {
-  .contact {  
+  .chat {  
     width: 416px;
   }
 }

@@ -56,25 +56,28 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
       label.h2.text-dark.font-weight-bold(for="inputContact") Чаты
       input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по сообщениям" id="inputContact")
     div.chat.mt-5.mb-3
-      a.d-flex.flex-row.align-items-center(href="#")
+      a.d-flex.flex-row.align-items-center(href="./chat.html")
         img.border-radius-50.my-4.ml-3(src="app/images/avatar_4.jpg" width="50" height="50")
         div.chat-text.p-4.text-dark
-          span.font-weight-bold Вениамин Редакторович
-          span 11:45
+          div.d-flex.justify-content-between
+            span.font-weight-bold Вениамин Редакторович
+            span 11:45
           small.d-block.text-truncate o_O
     div.chat.mt-5.mb-3
       a.d-flex.flex-row.align-items-center(href="#")
         img.border-radius-50.my-4.ml-3(src="app/images/avatar_2.jpg" width="50" height="50")
         div.chat-text.p-4.text-dark
-          span.font-weight-bold Джедай Падаванов
-          span 10:12
+          div.d-flex.justify-content-between
+            span.font-weight-bold Джедай Падаванов
+            span 10:12
           small.d-block.text-truncate Привет, скоро третий проект? Уже скоро надо будет выложить
     div.chat.mt-5.mb-3
       a.d-flex.flex-row.align-items-center(href="#")
         img.border-radius-50.my-4.ml-3(src="app/images/avatar_3.jpg" width="50" height="50")
         div.chat-text.p-4.text-dark
-          span.font-weight-bold Алексей Примадонин
-          span 08:53
+          div.d-flex.justify-content-between
+            span.font-weight-bold Алексей Примадонин
+            span 08:53
           small.d-block.text-truncate Тесты упали >_<
   div.tab-pane.w-sm-414px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group

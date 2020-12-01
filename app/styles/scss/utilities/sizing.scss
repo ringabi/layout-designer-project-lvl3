@@ -1,5 +1,5 @@
 .w-sm-414px {
   @media(min-width: 576px) {
-    width: 414px;
+    width: $width-header-mobile;
   }
 }

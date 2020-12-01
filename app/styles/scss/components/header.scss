@@ -1,11 +1,18 @@
 .header {
-  width: calc(min(100vw, 414px));
+  position: fixed;
+  bottom: 0;
+  z-index: 9997;
+
+  width: calc(min(100vw, #{$width-header-mobile}));
   height: $header-height;
+
   background: $primary;
 }
 
 @media(min-width: 576px) {
   .header {
-    width: 464px;
+    position: static;
+
+    width: $width-header-desktop;
   }
 }

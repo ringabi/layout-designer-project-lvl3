@@ -18,5 +18,9 @@
     .radius#{$infix}-#{nth($radiusLocations, 3)} {
       border-top-left-radius: 1rem;
     }
+
+    .radius#{$infix}-#{nth($radiusLocations, 4)} {
+      border-top-right-radius: 1rem;
+    }
   }
 }

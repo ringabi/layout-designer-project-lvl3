@@ -1,0 +1,13 @@
+.chat-footer {
+  background: white;
+
+  z-index: 9995;
+}
+
+@media (min-width: 576px) {
+  .chat-footer {
+    bottom: $frame-thickness;
+
+    width: calc((100vw - #{$width-header-desktop}) - (2 * #{$frame-thickness}) - 2px);
+  }
+}

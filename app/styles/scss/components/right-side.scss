@@ -1,6 +1,15 @@
+@import '../mixins/hide-scrollbar';
+
+.right-side {
+  height: calc(100vh - (2 * #{$frame-thickness}));
+
+  background: white;
+
+  @include hide-scrollbar();
+}
+
 @media(min-width: 576px) {
   .right-side {
-    height: calc(100vh - (2 * #{$frame-thickness}));
-    background: white;
+    margin-top: -#{$header-height};
   }
 }

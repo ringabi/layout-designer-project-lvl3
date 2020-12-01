@@ -1,9 +1,9 @@
 doctype html
 html(lang="ru")
   include head.pug
-  body.container-fluid.desktop-frame
-    div.row
-      div
-        include header.pug
+  body.desktop-frame
+    include header.pug
+    main.container-xxl
+      div.row
         include left-side.pug
-      include right-side.pug
+        include right-side-greeting.pug
