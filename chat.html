@@ -13,47 +13,47 @@
   <body class="desktop-frame">   
     <header class="header border-right border-gray d-flex align-items-center justify-content-between radius-sm-left-top"><img class="filter-invert-100 ml-4" src="./app/images/icons/logo.svg" alt="logo" width="15" height="25">
       <nav>
-        <div class="nav nav-tabs pr-1" id="nav-tab" role="tablist"><a class="nav-item nav-link d-flex flex-row align-items-center" id="chats-tab" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="true"><img class="filter-invert-100 d-block d-sm-none" src="./app/images/icons/chat-left-text.svg" alt="people" width="25" height="25"></a><a class="nav-item nav-link d-flex flex-row align-items-center" id="contacts-tab" href="./index.html" role="tab" aria-controls="contacts"><img class="filter-invert-100" src="./app/images/icons/people.svg" alt="people" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Контакты</small></a><a class="nav-item nav-link active d-flex flex-row align-items-center" id="chats-tab" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="false"><img class="filter-invert-100" src="./app/images/icons/chat.svg" alt="chat" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Сообщения</small></a><a class="nav-item nav-link d-flex flex-row align-items-center" id="index.html#profile-tab" href="./index.html?#profile" role="tab" aria-controls="profile"><img class="filter-invert-100" src="./app/images/icons/person.svg" alt="person" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Профиль</small></a></div>
+        <div class="nav nav-tabs pr-1" id="nav-tab" role="tablist"><a class="nav-item nav-link d-flex flex-row align-items-center text-decoration-none" id="chats-tab" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="true"><img class="filter-invert-100 d-block d-sm-none" src="./app/images/icons/chat-left-text.svg" alt="people" width="25" height="25"></a><a class="nav-item nav-link d-flex flex-row align-items-center text-decoration-none" id="contacts-tab" href="./index.html" role="tab"><img class="filter-invert-100" src="./app/images/icons/people.svg" alt="people" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Контакты</small></a><a class="nav-item nav-link active d-flex flex-row align-items-center text-decoration-none" id="chats" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="false"><img class="filter-invert-100" src="./app/images/icons/chat.svg" alt="chat" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Сообщения</small></a><a class="nav-item nav-link d-flex flex-row align-items-center text-decoration-none" id="index.html#profile-tab" href="./index.html?#profile" role="tab"><img class="filter-invert-100" src="./app/images/icons/person.svg" alt="person" width="25" height="25"><small class="text-light ml-2 d-none d-sm-block">Профиль</small></a></div>
       </nav>
     </header>
     <main class="container-fluid">
       <div class="row">
         <section class="tab-content left-side pt-5 px-4 border-right border-gray d-flex flex-column radius-sm-left-bottom order-2" id="nav-tabContent">
-          <div class="tab-pane active d-none d-sm-block" id="chats" role="tabpanel" aria-labelledby="chats-tab">
+          <div class="tab-pane active d-none d-sm-block" id="chat" role="tabpanel" aria-labelledby="chats-tab">
             <form class="form-group">
-              <label class="h2 text-dark font-weight-bold" for="inputContact">Чаты</label>
-              <input class="form-control-plaintext border-bottom p-4" type="search" placeholder="Поиск по сообщениям" id="inputContact">
+              <label class="h2 text-dark font-weight-bold">Чаты</label>
+              <input class="form-control-plaintext border-bottom p-4" type="search" placeholder="Поиск по сообщениям" id="inputMessages">
             </form>
-            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center" href="./chat.html"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_4.jpg" width="50" height="50">
+            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center text-decoration-none" href="./chat.html"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4">
                 <div class="chat-text p-4 text-dark">
                   <div class="d-flex justify-content-between">
                     <div class="font-weight-bold">Вениамин Редакторович</div>
                     <div>11:45</div>
                   </div><small class="d-block text-truncate">o_O</small>
                 </div></a></div>
-            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center" href="#"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_2.jpg" width="50" height="50">
+            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center text-decoration-none" href="#"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_2.jpg" width="50" height="50" alt="avatar_2">
                 <div class="chat-text p-4 text-dark">
                   <div class="d-flex justify-content-between"><span class="font-weight-bold">Джедай Падаванов</span><span>10:12</span></div><small class="d-block text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</small>
                 </div></a></div>
-            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center" href="#"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_3.jpg" width="50" height="50">
+            <div class="chat mt-5 mb-3"><a class="d-flex flex-row align-items-center text-decoration-none" href="#"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_3.jpg" width="50" height="50" alt="avatar_3">
                 <div class="chat-text p-4 text-dark">
                   <div class="d-flex justify-content-between">
                     <div class="font-weight-bold">Алексей Примадонин</div>
                     <div>08:53</div>
-                  </div><small class="d-block text-truncate">Тесты упали >_<</small>
+                  </div><small class="d-block text-truncate">Тесты упали >_&lt;</small>
                 </div></a></div>
           </div>
         </section>
         <section class="right-side border-left border-gray radius-sm-right order-sm-2 col-12 col-sm">
           <div class="row">
-            <div class="chat-header d-flex flex-row align-items-center border-bottom mb-5 radius-sm-right-top position-fixed"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_4.jpg" width="50" height="50">
+            <div class="chat-header d-flex flex-row align-items-center border-bottom mb-5 radius-sm-right-top position-fixed"><img class="border-radius-50 my-4 ml-3" src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4">
               <div class="contact-text p-4 text-dark">
                 <div class="font-weight-bold">Вениамин Редакторович</div><small>Онлайн</small>
               </div>
             </div>
           </div>
           <div class="row mt-header-height-and-spacing">
-            <div class="col-sm-8 d-flex flex-row"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50">
+            <div class="col-sm-8 d-flex flex-row"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4">
               <div class="bg-gray p-4 ml-3 radius">
                 <div class="font-weight-bold text-dark">Вениамин Редакторович</div>
                 <div class="text-secondary border-light-bottom pb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</div><small class="text-secondary">8 минут назад</small>
@@ -61,14 +61,14 @@
             </div>
           </div>
           <div class="row justify-content-end">
-            <div class="d-flex flex-row col-sm-8 align-self-end"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_1.jpg" width="50" height="50">
+            <div class="d-flex flex-row col-sm-8 align-self-end"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_1.jpg" width="50" height="50" alt="avatar_1">
               <div class="bg-primary p-4 mt-3 ml-3 radius">
                 <div class="text-light border-bottom pb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</div><small class="text-gray">5 минут назад</small>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="d-flex flex-row col-sm-8"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50">
+            <div class="d-flex flex-row col-sm-8"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4">
               <div class="bg-gray p-4 mt-3 ml-3 radius">
                 <div class="font-weight-bold text-dark">Вениамин Редакторович</div>
                 <div class="text-secondary border-light-bottom pb-2">Лады</div><small class="text-secondary">5 минут назад</small>
@@ -76,14 +76,14 @@
             </div>
           </div>
           <div class="row justify-content-end">
-            <div class="d-flex flex-row col-sm-8 align-self-end"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_1.jpg" width="50" height="50">
+            <div class="d-flex flex-row col-sm-8 align-self-end"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_1.jpg" width="50" height="50" alt="avatar_1">
               <div class="bg-primary p-4 mt-3 ml-3 radius">
                 <div class="text-light border-bottom pb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</div><small class="text-gray">3 минуты назад</small>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="d-flex flex-row col-sm-8"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50">
+            <div class="d-flex flex-row col-sm-8"><img class="border-radius-50 ml-3 align-self-end d-none d-sm-block" src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4">
               <div class="bg-gray p-4 mt-3 ml-3 radius">
                 <div class="font-weight-bold text-dark">Вениамин Редакторович</div>
                 <div class="text-secondary border-light-bottom pb-2">o_O</div><small class="text-secondary">Только что</small>
@@ -94,7 +94,7 @@
             <form class="col-12 col-sm chat-footer position-sticky">
               <div class="form-group d-flex border-top p-sm-2 mt-3 mx-sm-5">
                 <input class="form-control-plaintext" type="text" id="inputMessage" placeholder="Напишите сообщение">
-                <div class="bg-circle-fill d-flex justify-content-center align-items-center mt-3 ml-n-32"><a href="#"><img src="./app/images/icons/cursor.png"></a></div>
+                <div class="bg-circle-fill d-flex justify-content-center align-items-center mt-3 ml-n-32"><a class="text-decoration-none" href="#"><img src="./app/images/icons/cursor.png" alt="cursor"></a></div>
               </div>
             </form>
           </div>
