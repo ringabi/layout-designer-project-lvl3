@@ -1,10 +1,4 @@
-$enable-shadows: true;
-$gray: #efefef;
 
 $radiusLocations: ("left-bottom", "right", "left-top", "right-top");
 
 $sides: ("top", "right", "bottom", "left", "all");
-
-@import './../../../node_modules/bootstrap/scss/bootstrap';
-@import './utilities/border';
-@import './utilities/radius';

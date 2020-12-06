@@ -38,6 +38,8 @@ $container-max-widths: (
   xxl: 1540px
 );
 
+$enable-shadows: true;
+
 $frame-thickness: 1.5rem;
 $header-height: #{(72px / 16px)}rem;
 $width-header-desktop: #{(464px / 16px)}rem;

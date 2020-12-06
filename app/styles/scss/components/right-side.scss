@@ -1,4 +1,3 @@
-@import '../mixins/hide-scrollbar';
 
 .right-side {
   height: calc(100vh - (2 * #{$frame-thickness}));
@@ -11,5 +10,6 @@
 @media(min-width: 576px) {
   .right-side {
     margin-top: -#{$header-height};
+    padding-bottom: 112px;
   }
 }

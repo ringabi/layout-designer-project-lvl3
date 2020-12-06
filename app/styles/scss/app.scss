@@ -2,6 +2,9 @@
 
 @import 'variables';
 @import 'custom';
+@import './../../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'mixins/hide-scrollbar';
 
 @import 'components/desktop-frame';
 @import 'components/header';
@@ -17,5 +20,5 @@
 @import 'utilities/border-radius';
 @import 'utilities/sizing';
 @import 'utilities/bg-icon';
-
-@import 'mixins/hide-scrollbar';
+@import './utilities/border';
+@import './utilities/radius';

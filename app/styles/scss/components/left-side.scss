@@ -1,7 +1,8 @@
-@import '../mixins/hide-scrollbar';
 
 .left-side {
   height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
+
   background: white;
+
   @include hide-scrollbar();
 }

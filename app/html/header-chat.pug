@@ -2,14 +2,14 @@ header.header.border-right.border-gray.d-flex.align-items-center.justify-content
   img.filter-invert-100.ml-4(src="./app/images/icons/logo.svg" alt="logo" width="15" height="25")
   nav
     div.nav.nav-tabs.pr-1(id="nav-tab" role="tablist")
-      a.nav-item.nav-link.d-flex.flex-row.align-items-center.text-decoration-none(id="chats-tab" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="true")
-        img.filter-invert-100.d-block.d-sm-none(src="./app/images/icons/chat-left-text.svg" alt="people" width="25" height="25")
-      a.nav-item.nav-link.d-flex.flex-row.align-items-center.text-decoration-none(id="contacts-tab" href="./index.html" role="tab")
+      a.nav-item.nav-link.d-flex.flex-row.align-items-center.d-sm-none(id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="false")
+        img.filter-invert-100.d-sm-none(src="./app/images/icons/chat-left-text.svg" alt="people" width="25" height="25")
+      a.nav-item.nav-link.d-flex.flex-row.align-items-center(id="contacts-tab" data-toggle="tab" href="#contacts" role="tab" aria-controls="contacts" aria-selected="false")
         img.filter-invert-100(src="./app/images/icons/people.svg" alt="people" width="25" height="25")
         small.text-light.ml-2.d-none.d-sm-block Контакты
-      a.nav-item.nav-link.active.d-flex.flex-row.align-items-center.text-decoration-none(id="chats" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="false")
+      a.nav-item.nav-link.active.d-flex.flex-row.align-items-center(id="chats-tab" data-toggle="tab" href="#chats" role="tab" aria-controls="chats" aria-selected="true")
         img.filter-invert-100(src="./app/images/icons/chat.svg" alt="chat" width="25" height="25")
         small.text-light.ml-2.d-none.d-sm-block Сообщения
-      a.nav-item.nav-link.d-flex.flex-row.align-items-center.text-decoration-none(id="index.html#profile-tab" href="./index.html?#profile" role="tab")
+      a.nav-item.nav-link.d-flex.flex-row.align-items-center(id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false")
         img.filter-invert-100(src="./app/images/icons/person.svg" alt="person" width="25" height="25")
         small.text-light.ml-2.d-none.d-sm-block Профиль

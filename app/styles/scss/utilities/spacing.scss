@@ -1,5 +1,9 @@
 .mt-header-height-and-spacing {
-  margin-top: calc(#{$header-height} +  3rem);
+  margin-top: 4rem;
+	
+  @media(min-width: 576px) {
+    margin-top: calc(#{$header-height} + 3rem);
+  }
 }
 
 .ml-n-32 {

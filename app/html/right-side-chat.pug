@@ -1,4 +1,4 @@
-section.right-side.border-left.border-gray.radius-sm-right.order-sm-2.col-12.col-sm
+section.right-side.border-left.border-gray.radius-sm-right.order-sm-2.col-12.col-sm.d-none.d-sm-block
   div.row
     div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
       img.border-radius-50.my-4.ml-3(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
@@ -39,9 +39,9 @@ section.right-side.border-left.border-gray.radius-sm-right.order-sm-2.col-12.col
           div.text-secondary.border-light-bottom.pb-2 o_O
           small.text-secondary Только что
   div.row
-      form.col-12.col-sm.chat-footer.position-sticky
+      form.col-12.col-sm.chat-footer.position-fixed
         div.form-group.d-flex.border-top.p-sm-2.mt-3.mx-sm-5
-          input.form-control-plaintext(type="text" id="inputMessage" placeholder="Напишите сообщение")
+          input.form-control-plaintext(type="text" id="inputYourMessage" placeholder="Напишите сообщение")
           div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-3.ml-n-32
             a.text-decoration-none(href="#")
               img(src="./app/images/icons/cursor.png" alt="cursor")
