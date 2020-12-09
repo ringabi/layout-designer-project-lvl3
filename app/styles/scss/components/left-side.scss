@@ -4,5 +4,13 @@
 
   background: white;
 
+  padding-bottom: 3rem;
+
   @include hide-scrollbar();
+}
+
+@media(min-width: 576px) {
+  .left-side {
+    padding-bottom: 0;
+  }
 }

@@ -41,76 +41,76 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
   div.tab-pane.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold(for="inputContact") Контакты
-      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по контактам" id="inputContact")
+      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
-          div.contact.mt-5.mb-3.border-right.border-bottom.border-left
+          div.contact.mt-3.mb-3.border-right.border-bottom.border-left
            div.d-flex.flex-row.align-items-center.position-relative
-            img.border-radius-50.my-4.ml-3(src=index.avatar width="50" height="50" alt="avatar")
+            img.border-radius-50.ml-3(src=index.avatar width="50" height="50" alt="avatar")
             div.contact-text.p-4.d-flex.flex-column
-              a.font-weight-bold(href="")= index.name
+              a.font-weight-bold(href="#")= index.name
               small.d-block.text-truncate
-                a.stretched-link.text-decoration-none(href="")= index.status
+                a.stretched-link.text-decoration-none(href="#")= index.status
   div.tab-pane(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold(for="inputContact") Чаты
-      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по сообщениям" id="inputMessage")
-    div.chat.mt-5.mb-3.border-right.border-bottom.border-left
+      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputMessage")
+    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.my-4.ml-3(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        img.border-radius-50.ml-3(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.chat-text.p-4
           a.d-flex.justify-content-between(href="./chat.html")
             span.font-weight-bold Вениамин Редакторович
             span 11:45
           small.d-block.text-truncate
             a.stretched-link.text-decoration-none(href="./chat.html") o_O
-    div.chat.mt-5.mb-3.border-right.border-bottom.border-left
+    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.my-4.ml-3(src="app/images/avatar_2.jpg" width="50" height="50" alt="avatar_2")
+        img.border-radius-50.ml-3(src="app/images/avatar_2.jpg" width="50" height="50" alt="avatar_2")
         div.chat-text.p-4
-          a.d-flex.justify-content-between(href="")
+          a.d-flex.justify-content-between(href="#")
             span.font-weight-bold Джедай Падаванов
             span 10:12
           small.d-block.text-truncate
-            a.stretched-link.text-decoration-none(href="") Привет, скоро третий проект? Уже скоро надо будет выложить
-    div.chat.mt-5.mb-3.border-right.border-bottom.border-left
+            a.stretched-link.text-decoration-none(href="#") Привет, скоро третий проект? Уже скоро надо будет выложить
+    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.my-4.ml-3(src="app/images/avatar_3.jpg" width="50" height="50" alt="avatar_3")
+        img.border-radius-50.ml-3(src="app/images/avatar_3.jpg" width="50" height="50" alt="avatar_3")
         div.chat-text.p-4
-          a.d-flex.justify-content-between(href="")
+          a.d-flex.justify-content-between(href="#")
             span.font-weight-bold Алексей Примадонин
             span 08:53
           small.d-block.text-truncate
-            a.stretched-link.text-decoration-none(href="") Тесты упали >_&lt;
-  div.tab-pane.w-sm-414px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
+            a.stretched-link.text-decoration-none(href="#") Тесты упали >_&lt;
+  div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold(for="inputContact") Профиль
-      input.form-control-plaintext.border-bottom.p-4(type="search" placeholder="Поиск по сообщениям" id="inputText")
+      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.mt-5.border-0
-      div.d-flex.justify-content-center
+      div.d-flex.justify-content-center.pt-4
         img.card-img-center.border-radius-50(src="./app/images/avatar_1.jpg" alt="domovenock" width="90" height="90")
       div.card-body.text-center.py-3
         h5.card-title Кодовёнок Хекслетович
         p.card-text.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-    ul.list-group
+    ul.list-group.mt-5.mb-3
       li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-top-0.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Страна
           span.text-dark Москва, Россия
-        img.text-black-50(src="./app/images/icons/globe.svg" alt="globe" width="16" height="16")
+        img.opacity-50(src="./app/images/icons/globe.svg" alt="globe" width="16" height="16")
       li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Телефон
           span.text-dark +7 (499) 123-45-67
-        img.text-black-50(src="./app/images/icons/telephone.svg" alt="telephone" width="16" height="16")
+        img.opacity-50(src="./app/images/icons/telephone.svg" alt="telephone" width="16" height="16")
       li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Email
           span.text-dark nikita.m@hexlet.io
-        img.text-black-50(src="./app/images/icons/envelope.svg" alt="envelope" width="16" height="16")
+        img.opacity-50(src="./app/images/icons/envelope.svg" alt="envelope" width="16" height="16")
       li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Twitter
           span.text-dark @n__mikhaylov
-        img.text-black-50(src="./app/images/icons/people.svg" alt="people" width="16" height="16")
+        img.opacity-50(src="./app/images/icons/people.svg" alt="people" width="16" height="16")

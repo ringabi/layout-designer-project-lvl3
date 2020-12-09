@@ -1,6 +1,6 @@
 .chat-header {
   width: 100vw;
-
+  
   top: 0;
 
   background: white;
@@ -12,6 +12,7 @@
   .chat-header {
     top: $frame-thickness;
     
-    width: calc((100vw - #{$width-header-desktop}) - (2 * #{$frame-thickness}) - 2px);
+    width: calc((100vw - #{$width-header-desktop}) - (2 * #{$frame-thickness}) - 2 * #{$border-width});
+    max-width: calc(#{map-get($container-max-widths, xxl)} - #{$width-header-desktop} - 4 * #{$border-width});
   }
 }

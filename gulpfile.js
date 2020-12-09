@@ -17,15 +17,19 @@ gulp.task('sass', function () {
 
 // Слежение за изменёнными файлами *.scss и *.html
 //gulp.task('watch', function () {
-//	  gulp.watch('./app/styles/scss/*.*/*.scss', ['sass']);
-//	  gulp.watch('./*.html', ['html']);
+//	  gulp.watch('./app/styles/scss/**/*.scss', ["sass"]);
+//	  gulp.watch('./*.html', ["html"]);
 //});
 
-// Преобразование файлов app/html/index.pug и app/html/chat.pug в файлы /*.html
+// Преобразование файла app/html/index.pug в файл ./index.html
 gulp.task('html', function buildHTML() {
   return gulp.src('app/html/index.pug')
   .pipe(pug())
   .pipe(gulp.dest('./'))
+});
+
+// Преобразование файла app/html/chat.pug в файл ./chat.html
+gulp.task('html-chat', function buildHTML() {
   return gulp.src('app/html/chat.pug')
   .pipe(pug())
   .pipe(gulp.dest('./'))

@@ -4,21 +4,22 @@
 @import 'custom';
 @import './../../../node_modules/bootstrap/scss/bootstrap';
 
-@import 'mixins/hide-scrollbar';
+@import './mixins/hide-scrollbar';
 
-@import 'components/desktop-frame';
-@import 'components/header';
-@import 'components/left-side';
-@import 'components/right-side';
-@import 'components/contact';
-@import 'components/chat';
-@import 'components/chat-header';
-@import 'components/chat-footer';
+@import './components/desktop-frame';
+@import './components/header';
+@import './components/left-side';
+@import './components/right-side';
+@import './components/contact';
+@import './components/chat';
+@import './components/chat-header';
+@import './components/chat-footer';
 
-@import 'utilities/filter-invert';
-@import 'utilities/spacing';
-@import 'utilities/border-radius';
-@import 'utilities/sizing';
-@import 'utilities/bg-icon';
+@import './utilities/filter-invert';
+@import './utilities/spacing';
+@import './utilities/border-radius';
+@import './utilities/sizing';
+@import './utilities/bg-icon';
 @import './utilities/border';
 @import './utilities/radius';
+@import './utilities/opacity';

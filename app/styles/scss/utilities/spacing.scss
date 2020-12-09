@@ -8,4 +8,8 @@
 
 .ml-n-32 {
   margin-left: -$spacer * 2;
+
+  @media(min-width: 766px) and (max-width: 990px) {
+    margin-left: -36px;
+  }
 }

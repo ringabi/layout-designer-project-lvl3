@@ -2,8 +2,10 @@ doctype html
 html(lang="ru")
   include head.pug
   body.desktop-frame
-    include header.pug
-    main.container-fluid
+    div.container-xxl
+      div.row
+        include header.pug
+    main.container-xxl
       div.row
         include left-side.pug
         include right-side-greeting.pug

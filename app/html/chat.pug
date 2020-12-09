@@ -1,9 +1,11 @@
 doctype html
 html(lang="ru")
   include head.pug
-  body.desktop-frame    
-    include header-chat.pug
-    main.container-fluid
+  body.desktop-frame
+    div.container-xxl
+      div.row
+        include header-chat.pug
+    main.container-xxl
       div.row
         include left-side-chat.pug
         include right-side-chat.pug
