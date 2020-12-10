@@ -8004,10 +8004,24 @@ a.text-gray:hover, a.text-gray:focus {
   .w-sm-416px {
     width: 416px; } }
 
+.font-family-roboto {
+  font-family: Roboto; }
+
 .bg-circle-fill {
   background: no-repeat url("../app/images/icons/ellipse-fill-primary.png");
   width: 53.5px;
   height: 50px; }
+
+.bg-globe {
+  background: no-repeat url("../app/images/sprite/sprite.svg#globe");
+  width: 32px;
+  height: 32px;
+  stroke: red;
+  color: red;
+  opacity: .5; }
+
+.bg-globe svg {
+  stroke: red; }
 
 .border-top {
   border-top: 1px solid #efefef !important; }
