@@ -7912,12 +7912,14 @@ a.text-gray:hover, a.text-gray:focus {
   height: 91px;
   background: #fff;
   color: #343a40; }
-  .contact a {
+  .contact div > a {
     color: #343a40; }
   .contact small > a {
     color: #6c757d; }
-  .contact :hover > a, .contact :hover > .text-truncate {
-    color: #fff; }
+  .contact :hover > div > a {
+    color: #fbfbfb; }
+  .contact :hover > small > a, .contact :hover > .text-truncate {
+    color: #efefef; }
   .contact :hover {
     background: #4545a5; }
   .contact > .contact-text {
@@ -7943,7 +7945,7 @@ a.text-gray:hover, a.text-gray:focus {
   .chat small > a {
     color: #6c757d; }
   .chat :hover > a, .chat :hover > .text-truncate {
-    color: #fff; }
+    color: #fbfbfb; }
   .chat :hover {
     background: #4545a5; }
   .chat .chat-text {
@@ -8005,7 +8007,7 @@ a.text-gray:hover, a.text-gray:focus {
     width: 416px; } }
 
 .font-family-roboto {
-  font-family: Roboto; }
+  font-family: Roboto, sans-serif; }
 
 .bg-circle-fill {
   background: no-repeat url("../app/images/icons/ellipse-fill-primary.png");
