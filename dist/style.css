@@ -7864,7 +7864,7 @@ a.text-gray:hover, a.text-gray:focus {
   position: fixed;
   bottom: 0;
   z-index: 9997;
-  width: calc(min(100vw, 25.875rem));
+  width: calc(min(100vw, 29rem));
   height: 4.5rem;
   background: #4545a5; }
 
@@ -7908,7 +7908,8 @@ a.text-gray:hover, a.text-gray:focus {
 .contact {
   display: block;
   margin: 0;
-  width: calc(min(80.5vw, 366px));
+  max-width: 416px;
+  width: calc(100vw - 3rem);
   height: 91px;
   background: #fff;
   color: #343a40; }
@@ -7925,8 +7926,7 @@ a.text-gray:hover, a.text-gray:focus {
   .contact > .contact-text {
     padding: 1.5rem;
     overflow: hidden;
-    text-overflow: ellipsis;
-    width: 77vw; }
+    text-overflow: ellipsis; }
 
 @media (min-width: 576px) {
   .contact {
@@ -7936,7 +7936,8 @@ a.text-gray:hover, a.text-gray:focus {
   display: block;
   box-sizing: border-box;
   margin: 0;
-  width: calc(min(80.5vw, 416px));
+  max-width: 416px;
+  width: calc(100vw - 3rem);
   height: 91px;
   background: #fff;
   color: #343a40; }
