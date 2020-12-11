@@ -7912,7 +7912,8 @@ a.text-gray:hover, a.text-gray:focus {
   width: calc(100vw - 3rem);
   height: 91px;
   background: #fff;
-  color: #343a40; }
+  color: #343a40;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
   .contact div > a {
     color: #343a40; }
   .contact small > a {
@@ -7940,7 +7941,8 @@ a.text-gray:hover, a.text-gray:focus {
   width: calc(100vw - 3rem);
   height: 91px;
   background: #fff;
-  color: #343a40; }
+  color: #343a40;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
   .chat div > a {
     color: #343a40; }
   .chat small > a {
