@@ -1,8 +1,8 @@
 {
-  "name": "layout-designer-project-lvl3",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "third educational project 'Messenger Hexlet Chat'",
-  "main": "./index.html",
+  "main": "./dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
