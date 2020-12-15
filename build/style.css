@@ -7874,6 +7874,7 @@ a.text-gray:hover, a.text-gray:focus {
     width: 29rem; } }
 
 .left-side-chat {
+  height: 100vh;
   width: calc(min(100vw, 29rem));
   background: white;
   padding-bottom: calc(4.5rem + 3rem); }
@@ -7891,6 +7892,7 @@ a.text-gray:hover, a.text-gray:focus {
     height: calc(100vh - (4.5rem + 2 * 1.5rem)); } }
 
 .left-side {
+  height: 100vh;
   width: calc(min(100vw, 29rem));
   background: white;
   padding-bottom: 4.5rem; }
@@ -8016,7 +8018,7 @@ a.text-gray:hover, a.text-gray:focus {
   margin-top: 4rem; }
   @media (min-width: 576px) {
     .mt-header-height-and-spacing {
-      margin-top: calc(4.5rem + 4rem); } }
+      margin-top: calc(4.5rem + 4.25rem); } }
 
 .ml-n-32 {
   margin-left: -2rem; }
