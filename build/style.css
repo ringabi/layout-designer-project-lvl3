@@ -7874,7 +7874,7 @@ a.text-gray:hover, a.text-gray:focus {
     width: 29rem; } }
 
 .left-side {
-  height: calc(100vh - (4.5rem + 2 * 1.5rem));
+  height: calc(100vh - 4.5rem);
   width: calc(min(100vw, 29rem));
   background: white;
   padding-bottom: 3rem; }
@@ -7888,10 +7888,10 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 576px) {
   .left-side {
-    padding-bottom: 0; } }
+    padding-bottom: 0;
+    height: calc(100vh - (4.5rem + 2 * 1.5rem)); } }
 
 .right-side {
-  height: calc(100vh - (2 * 1.5rem));
   background: white; }
 
 @media (min-width: 576px) {
@@ -8001,7 +8001,7 @@ a.text-gray:hover, a.text-gray:focus {
   margin-top: 4rem; }
   @media (min-width: 576px) {
     .mt-header-height-and-spacing {
-      margin-top: calc(4.5rem + 3rem); } }
+      margin-top: calc(4.5rem + 4rem); } }
 
 .ml-n-32 {
   margin-left: -2rem; }
@@ -8023,12 +8023,12 @@ a.text-gray:hover, a.text-gray:focus {
   font-family: Roboto, sans-serif; }
 
 .bg-circle-fill {
-  background: no-repeat url("../app/images/icons/ellipse-fill-primary.png");
+  background: no-repeat url("./images/icons/ellipse-fill-primary.png");
   width: 53.5px;
   height: 50px; }
 
 .bg-globe {
-  background: no-repeat url("../app/images/sprite/sprite.svg#globe");
+  background: no-repeat url("./images/sprite/sprite.svg#globe");
   width: 32px;
   height: 32px;
   stroke: red;
