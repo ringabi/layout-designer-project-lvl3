@@ -8018,7 +8018,7 @@ a.text-gray:hover, a.text-gray:focus {
   margin-top: 4rem; }
   @media (min-width: 576px) {
     .mt-header-height-and-spacing {
-      margin-top: calc(4.5rem + 4.25rem); } }
+      margin-top: calc(4.5rem + 4.5rem); } }
 
 .ml-n-32 {
   margin-left: -2rem; }
