@@ -7873,11 +7873,27 @@ a.text-gray:hover, a.text-gray:focus {
     position: static;
     width: 29rem; } }
 
-.left-side {
-  height: calc(100vh - 4.5rem);
+.left-side-chat {
   width: calc(min(100vw, 29rem));
   background: white;
-  padding-bottom: 3rem; }
+  padding-bottom: calc(4.5rem + 3rem); }
+  .left-side-chat {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .left-side-chat::-webkit-scrollbar {
+    display: none; }
+
+@media (min-width: 576px) {
+  .left-side-chat {
+    padding-bottom: 0;
+    height: calc(100vh - (4.5rem + 2 * 1.5rem)); } }
+
+.left-side {
+  width: calc(min(100vw, 29rem));
+  background: white;
+  padding-bottom: 4.5rem; }
   .left-side {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -7962,7 +7978,6 @@ a.text-gray:hover, a.text-gray:focus {
   .chat :hover {
     background: #4545a5; }
   .chat .chat-text {
-    padding: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 77vw; }
