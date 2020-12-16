@@ -3,7 +3,7 @@
   bottom: 0;
   z-index: 9997;
 
-  width: calc(min(100vw, #{$width-header-mobile}));
+  width: calc(min(100vw, #{$width-header-desktop}));
   height: $header-height;
 
   background: $primary;

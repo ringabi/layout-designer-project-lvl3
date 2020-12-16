@@ -1,8 +1,16 @@
+.mt-82 {
+  margin-top: 82px;
+}
+
+.mt-79 {
+  margin-top: 79px;
+}
+
 .mt-header-height-and-spacing {
   margin-top: 4rem;
 	
   @media(min-width: 576px) {
-    margin-top: calc(#{$header-height} + 3rem);
+    margin-top: calc(#{$header-height} + 4.5rem);
   }
 }
 
@@ -12,4 +20,9 @@
   @media(min-width: 766px) and (max-width: 990px) {
     margin-left: -36px;
   }
+}
+
+.mx-32 {
+  margin-right: 2rem;
+  margin-left: 2rem;
 }

@@ -12,7 +12,20 @@ gulp.task('sass', function () {
 	  return gulp.src('app/styles/scss/*.scss')
 	    .pipe(concat('style.scss'))
 	    .pipe(sass().on('error', sass.logError))
-	    .pipe(gulp.dest('dist/'));
+	    .pipe(gulp.dest('build/'));
+});
+
+gulp.task('svgSprite', function () {
+  return gulp.src('app/images/icons/*.svg')
+	.pipe(svgSprite({
+	  mode: {
+	    stack: {
+	      sprite: "../sprite.svg"
+	    }
+	  },
+	}
+        ))
+	.pipe(gulp.dest('build/images/sprite/'));
 });
 
 // Слежение за изменёнными файлами *.scss и *.html
@@ -25,14 +38,14 @@ gulp.task('sass', function () {
 gulp.task('html', function buildHTML() {
   return gulp.src('app/html/index.pug')
   .pipe(pug())
-  .pipe(gulp.dest('./'))
+  .pipe(gulp.dest('./build/'))
 });
 
 // Преобразование файла app/html/chat.pug в файл ./chat.html
 gulp.task('html-chat', function buildHTML() {
   return gulp.src('app/html/chat.pug')
   .pipe(pug())
-  .pipe(gulp.dest('./'))
+  .pipe(gulp.dest('./build/'))
 });
 
 // Запуск тасков по умолчанию

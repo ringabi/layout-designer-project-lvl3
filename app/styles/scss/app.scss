@@ -10,6 +10,7 @@
 @import './components/header';
 @import './components/left-side';
 @import './components/right-side';
+@import './components/right-side-chat';
 @import './components/contact';
 @import './components/chat';
 @import './components/chat-header';
@@ -23,3 +24,9 @@
 @import './utilities/border';
 @import './utilities/radius';
 @import './utilities/opacity';
+@import './utilities/box-shadow';
+
+// set font Roboto
+body {
+  font-family: nth($font-family-sans-serif, 4), sans-serif;
+}

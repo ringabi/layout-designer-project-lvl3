@@ -1,10 +1,29 @@
 
-.left-side {
-  height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
+.left-side-chat {
+  height: 100vh;
+  width: calc(min(100vw, #{$width-header-desktop}));
 
   background: white;
 
-  padding-bottom: 3rem;
+  padding-bottom: calc(#{$header-height} + 3rem);
+
+  @include hide-scrollbar();
+}
+
+@media(min-width: 576px) {
+  .left-side-chat {
+    padding-bottom: 0;
+    height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
+  }
+}
+
+.left-side {
+  height: 100vh;
+  width: calc(min(100vw, #{$width-header-desktop}));
+
+  background: white;
+
+  padding-bottom: #{$header-height};
 
   @include hide-scrollbar();
 }
@@ -12,5 +31,7 @@
 @media(min-width: 576px) {
   .left-side {
     padding-bottom: 0;
+
+    height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
   }
 }

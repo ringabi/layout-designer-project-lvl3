@@ -3,76 +3,76 @@
     "A": [{
       name: "Алексей Примадонин",
       status: "Онлайн",
-      avatar: "app/images/avatar_3.jpg"
+      avatar: "./images/avatar_3.jpg"
     }],
 
     "В": [{
       name: "Вениамин Редакторович",
       status: "Онлайн",
-      avatar: "app/images/avatar_4.jpg"
+      avatar: "./images/avatar_4.jpg"
     }],
 
     "Д": [{
       name: "Джедай Падаванов",
       status: "Был онлайн вчера",
-      avatar: "app/images/avatar_2.jpg"
+      avatar: "./images/avatar_2.jpg"
     }],
 
     "К": [{
       name: "Кодовёнок Хекслетович",
       status: "Был онлайн 3 часа назад",
-      avatar: "app/images/avatar_1.jpg"
+      avatar: "./images/avatar_1.jpg"
     },
     {
       name: "Королева Верстальщина",
       status: "Была онлайн вчера",
-      avatar: "app/images/avatar_5.jpg"
+      avatar: "./images/avatar_5.jpg"
     }],
 
     "П": [{
       name: "Питонист Джангович",
       status: "Был онлайн вчера",
-      avatar: "app/images/avatar_6.jpg"
+      avatar: "./images/avatar_6.jpg"
     }],
   }
 
-section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
-  div.tab-pane.d-sm-none(id="chat" role="tabpanel" aria-labelledby="chat-tab")
+section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
+  div.tab-pane.d-sm-none.pb-5(id="chat" role="tabpanel" aria-labelledby="chat-tab")
     div.row
       div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
-        img.border-radius-50.ml-3(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-        div.contact-text.p-4.text-dark
-          div.font-weight-bold Вениамин Редакторович
-          small Онлайн
-    div.row.mt-header-height-and-spacing
+        img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        div.contact-text.p-4
+          div.font-weight-bold.text-dark Вениамин Редакторович
+          small.text-secondary Онлайн
+    div.row.mt-header-height-and-spacing.px-4
       div.col-sm-8.d-flex.flex-row
-        img.border-radius-50.align-self-end.d-none.d-sm-block(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        img.border-radius-50.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.bg-gray.p-4.radius
           div.font-weight-bold.text-dark Вениамин Редакторович
           div.text-secondary.border-light-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
           small.text-secondary 8 минут назад
-    div.row.justify-content-end.d-sm-none
+    div.row.justify-content-end.d-sm-none.px-4
       div.d-flex.flex-row.col-sm-8.align-self-end
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="app/images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
+        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
         div.bg-primary.p-4.mt-3.radius
           div.text-light.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
           small.text-gray 5 минут назад
-    div.row
+    div.row.px-4
       div.d-flex.flex-row.col-sm-8.d-sm-none
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.bg-gray.p-4.mt-3.radius
           div.font-weight-bold.text-dark Вениамин Редакторович
           div.text-secondary.border-light-bottom.pb-2 Лады
           small.text-secondary 5 минут назад
-    div.row.justify-content-end.d-sm-none
+    div.row.justify-content-end.d-sm-none.px-4
       div.d-flex.flex-row.col-sm-8.align-self-end
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="app/images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
+        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
         div.bg-primary.p-4.mt-3.radius
           div.text-light.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
           small.text-gray 3 минуты назад
-    div.row
+    div.row.px-4
       div.d-flex.flex-row.col-sm-8.d-sm-none
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.bg-gray.p-4.mt-3.radius
           div.font-weight-bold.text-dark Вениамин Редакторович
           div.text-secondary.border-light-bottom.pb-2 o_O
@@ -80,18 +80,18 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
     div.row.d-sm-none
       form.col-12.col-sm.chat-footer.position-fixed
         div.form-group.d-flex.border-top.mt-3
-          input.form-control-plaintext(type="text" id="inputMessage" placeholder="Напишите сообщение")
+          input.form-control-plaintext(type="text" placeholder="Напишите сообщение" id="inputMessage")
           div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-2.ml-n-32
             a.text-decoration-none(href="#")
-              img(src="./app/images/icons/cursor.png" alt="cursor")
+              img(src="./images/icons/cursor.png" alt="cursor")
   div.tab-pane(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold(for="inputContact") Контакты
-      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по контактам" id="inputContact")
+      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
-          div.contact.mt-3.mb-3.border-right.border-bottom.border-left
+          div.contact.mt-3.mb-3
            div.d-flex.flex-row.align-items-center.position-relative
             img.border-radius-50.ml-3(src=index.avatar width="50" height="50" alt="avatar")
             div.contact-text.p-4.d-flex.flex-column
@@ -101,62 +101,62 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
   div.tab-pane.active(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold Чаты
-      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
-    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
+      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
+    div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.ml-3(src="app/images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+        img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.chat-text.p-4
           a.d-flex.justify-content-between(href="#")
             div.font-weight-bold Вениамин Редакторович
-            div 11:45
-          small.d-block.text-truncate
+            small.text-secondary.pr-3 11:45
+          small.d-block.text-truncate.pr-3
             a.stretched-link.text-decoration-none(href="#") o_O
-    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
+    div.chat.mt-3.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.ml-3(src="app/images/avatar_2.jpg" width="50" height="50" alt="avatar_2")
+        img.border-radius-50.ml-3(src="./images/avatar_2.jpg" width="50" height="50" alt="avatar_2")
         div.chat-text.p-4
           a.d-flex.justify-content-between(href="#")
             div.font-weight-bold Джедай Падаванов
-            div 10:12
-          small.d-block.text-truncate
+            small.text-secondary.pr-3 10:12
+          small.d-block.text-truncate.pr-3
             a.stretched-link.text-decoration-none(href="#") Привет, скоро третий проект? Уже скоро надо будет выложить
-    div.chat.mt-3.mb-3.border-right.border-bottom.border-left
+    div.chat.mt-3.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
-        img.border-radius-50.ml-3(src="app/images/avatar_3.jpg" width="50" height="50" alt="avatar_3")
+        img.border-radius-50.ml-3(src="./images/avatar_3.jpg" width="50" height="50" alt="avatar_3")
         div.chat-text.p-4                  
           a.d-flex.justify-content-between(href="#")
             div.font-weight-bold Алексей Примадонин
-            div 08:53
-          small.d-block.text-truncate
+            small.text-secondary.pr-3 08:53
+          small.d-block.text-truncate.pr-3
             a.stretched-link.text-decoration-none(href="#") Тесты упали >_&lt;
   div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
       label.h2.text-dark.font-weight-bold(for="inputContact") Профиль
-      input.form-control-plaintext.border-bottom.p-4.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputText")
-    div.card.mb-3.mt-5.border-0
-      div.d-flex.justify-content-center.pt-4
-        img.card-img-center.border-radius-50(src="./app/images/avatar_1.jpg" alt="domovenock" width="90" height="90")
+      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
+    div.card.mb-3.mt-5.border-0.pt-4
+      div.d-flex.justify-content-center
+        img.card-img-center.border-radius-50(src="./images/avatar_1.jpg" alt="domovenock" width="90" height="90")
       div.card-body.text-center.py-3
-        h5.card-title Кодовёнок Хекслетович
+        div.card-title.font-weight-bold.text-dark Кодовёнок Хекслетович
         p.card-text.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-    ul.list-group.mt-5.mb-3
-      li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-top-0.border-right-0.border-left-0
+    ul.list-group.mt-79.mb-3
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-top-0.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Страна
           span.text-dark Москва, Россия
-        img.opacity-50(src="./app/images/icons/globe.svg" alt="globe" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
+        img.opacity-50(src="./images/icons/globe.svg" alt="globe" width="16" height="16")
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Телефон
           span.text-dark +7 (499) 123-45-67
-        img.opacity-50(src="./app/images/icons/telephone.svg" alt="telephone" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
+        img.opacity-50(src="./images/icons/telephone.svg" alt="telephone" width="16" height="16")
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Email
           span.text-dark nikita.m@hexlet.io
-        img.opacity-50(src="./app/images/icons/envelope.svg" alt="envelope" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.py-3.border-right-0.border-left-0
+        img.opacity-50(src="./images/icons/envelope.svg" alt="envelope" width="16" height="16")
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-bottom-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Twitter
           span.text-dark @n__mikhaylov
-        img.opacity-50(src="./app/images/icons/people.svg" alt="people" width="16" height="16")
+        img.opacity-50(src="./images/icons/people.svg" alt="people" width="16" height="16")
