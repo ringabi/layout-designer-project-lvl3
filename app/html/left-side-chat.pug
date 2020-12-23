@@ -36,7 +36,7 @@
     }],
   }
 
-section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
+section.tab-content.left-side-chat.pt-5.px-2.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
   div.tab-pane.pb-5.d-sm-none(id="chat" role="tabpanel" aria-labelledby="chat-tab")
     div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
       img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
@@ -70,7 +70,7 @@ section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.fle
   div.tab-pane(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
       h2.text-dark.font-weight-bold Контакты
-      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
+      input.form-control-plaintext.border-bottom.p-4.mt-4.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
@@ -84,7 +84,7 @@ section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.fle
   div.tab-pane.active(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
       h2.text-dark.font-weight-bold Чаты
-      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
+      input.form-control-plaintext.border-bottom.p-4.mt-4.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
     div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
         img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
@@ -115,30 +115,30 @@ section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.fle
   div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
       h2.text-dark.font-weight-bold Профиль
-      input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
+      input.form-control-plaintext.border-bottom.p-4.mt-4.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.mt-5.border-0.pt-4
       div.d-flex.justify-content-center
         img.card-img-center.border-radius-50(src="./images/avatar_1.jpg" alt="domovenock" width="90" height="90")
       div.card-body.text-center.py-3
         div.card-title.font-weight-bold.text-dark Кодовёнок Хекслетович
-        p.card-text.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-    ul.list-group.mt-79.mb-3
-      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-top-0.border-right-0.border-left-0
+        div.card-text.text-secondary(style="margin-left: -16px; margin-right: -16px") Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+    ul.list-group.mt79.mb-3(style="margin-top: 63px")
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-3.border-top-0.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Страна
           span.text-dark Москва, Россия
         img.opacity-50(src="./images/icons/globe.svg" alt="globe" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-left-0
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-3.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Телефон
           span.text-dark +7 (499) 123-45-67
         img.opacity-50(src="./images/icons/telephone.svg" alt="telephone" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-left-0
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-3.border-right-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Email
           span.text-dark nikita.m@hexlet.io
         img.opacity-50(src="./images/icons/envelope.svg" alt="envelope" width="16" height="16")
-      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-4.border-right-0.border-bottom-0.border-left-0
+      li.list-group-item.d-flex.justify-content-between.align-items-center.p-3.mx-3.border-right-0.border-bottom-0.border-left-0
         div.d-flex.flex-column.small
           span.text-secondary Twitter
           span.text-dark @n__mikhaylov
