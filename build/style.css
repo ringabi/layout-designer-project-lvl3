@@ -7857,25 +7857,27 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 576px) {
   .desktop-frame {
-    border: 1.5rem solid #efefef;
-    background: #efefef; } }
+    background: #efefef;
+    border-top: 1.5rem solid #efefef;
+    border-right: calc(1.5rem - 15px) solid #efefef;
+    border-bottom: 1.5rem solid #efefef;
+    border-left: calc(1.5rem - 15px) solid #efefef; } }
 
 .header {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 9997;
-  width: calc(min(100vw, 29rem));
   height: 4.5rem;
   background: #4545a5; }
 
 @media (min-width: 576px) {
   .header {
-    position: static;
-    width: 29rem; } }
+    position: static; } }
 
 .left-side-chat {
   height: 100vh;
-  width: calc(min(100vw, 29rem));
   background: white;
   padding-bottom: calc(4.5rem + 3rem); }
   .left-side-chat {
@@ -7893,7 +7895,6 @@ a.text-gray:hover, a.text-gray:focus {
 
 .left-side {
   height: 100vh;
-  width: calc(min(100vw, 29rem));
   background: white;
   padding-bottom: 4.5rem; }
   .left-side {
@@ -7914,7 +7915,7 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 576px) {
   .right-side {
-    margin-top: -4.5rem;
+    height: calc(100vh - (2 * 1.5rem));
     padding-bottom: 14px; } }
 
 .right-side-chat {
@@ -7930,15 +7931,11 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 576px) {
   .right-side-chat {
-    margin-top: -4.5rem;
     padding-bottom: 103px; } }
 
 .contact {
   display: block;
   margin: 0;
-  max-width: 416px;
-  width: calc(100vw - 3rem);
-  height: 91px;
   background: #fff;
   color: #343a40;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
@@ -7957,17 +7954,10 @@ a.text-gray:hover, a.text-gray:focus {
     overflow: hidden;
     text-overflow: ellipsis; }
 
-@media (min-width: 576px) {
-  .contact {
-    width: 416px; } }
-
 .chat {
   display: block;
   box-sizing: border-box;
   margin: 0;
-  max-width: 416px;
-  width: calc(100vw - 3rem);
-  height: 91px;
   background: #fff;
   color: #343a40;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
@@ -7984,33 +7974,62 @@ a.text-gray:hover, a.text-gray:focus {
     text-overflow: ellipsis;
     width: 77vw; }
 
-@media (min-width: 576px) {
-  .chat {
-    width: 416px; } }
-
 .chat-header {
-  width: 100vw;
   height: 91px;
   top: 0;
+  right: 0;
+  left: 0;
   background: white;
   z-index: 9999; }
 
 @media (min-width: 576px) {
   .chat-header {
     top: 1.5rem;
-    width: calc((100vw - 29rem) - (2 * 1.5rem) - 2 * 1px);
-    max-width: calc(1540px - 29rem - 4 * 1px); } }
+    right: 1.5rem;
+    left: auto;
+    width: 31.25vw; } }
+
+@media (min-width: 992px) {
+  .chat-header {
+    width: 47.58%; } }
+
+@media (min-width: 1200px) {
+  .chat-header {
+    width: 64%; } }
+
+@media (min-width: 1600px) {
+  .chat-header {
+    width: 38.28125%;
+    right: calc((100vw - 1540px) / 2 + 2 * 1.5rem);
+    left: calc((100vw - 1540px) / 2 + 2 * 1.5rem + 29rem); } }
 
 .chat-footer {
   background: white;
+  right: 0;
+  left: 0;
   bottom: 4.5rem;
   z-index: 9995; }
 
 @media (min-width: 576px) {
   .chat-footer {
     bottom: 1.5rem;
-    width: calc((100vw - 29rem) - (2 * 1.5rem) - 2 * 1px);
-    max-width: calc(1540px - 29rem - 4 * 1px); } }
+    right: 1.5rem;
+    left: auto;
+    width: 31.25vw; } }
+
+@media (min-width: 992px) {
+  .chat-footer {
+    width: 47.58vw; } }
+
+@media (min-width: 1200px) {
+  .chat-footer {
+    width: 64%; } }
+
+@media (min-width: 1600px) {
+  .chat-footer {
+    width: 38.28125%;
+    right: calc((100vw - 1540px) / 2 + 2 * 1.5rem);
+    left: calc((100vw - 1540px) / 2 + 2 * 1.5rem + 29rem); } }
 
 .filter-invert-100 {
   filter: invert(100%); }
@@ -8046,15 +8065,21 @@ a.text-gray:hover, a.text-gray:focus {
 .h-47 {
   height: 47px; }
 
-.w-560 {
-  width: 560px; }
-
-.w-557 {
-  width: 557px; }
+@media (min-width: 1200px) {
+  .w-61 {
+    width: 61%; } }
 
 @media (min-width: 576px) {
   .w-sm-416px {
     width: 416px; } }
+
+@media (min-width: 576px) {
+  .w-input {
+    width: 76%; } }
+
+@media (min-width: 992px) {
+  .w-input {
+    width: 92%; } }
 
 .bg-circle-fill {
   background: no-repeat url("./images/icons/ellipse-fill-primary.png");
@@ -8238,6 +8263,3 @@ a.text-gray:hover, a.text-gray:focus {
 
 .box-shadow {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08); }
-
-body {
-  font-family: Roboto, sans-serif; }

@@ -37,56 +37,39 @@
   }
 
 section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
-  div.tab-pane.d-sm-none.pb-5(id="chat" role="tabpanel" aria-labelledby="chat-tab")
-    div.row
-      div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
-        img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-        div.contact-text.p-4
-          div.font-weight-bold.text-dark Вениамин Редакторович
-          small.text-secondary Онлайн
-    div.row.mt-header-height-and-spacing.px-4
-      div.col-sm-8.d-flex.flex-row
-        img.border-radius-50.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-        div.bg-gray.p-4.radius
-          div.font-weight-bold.text-dark Вениамин Редакторович
-          div.text-secondary.border-light-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
-          small.text-secondary 8 минут назад
-    div.row.justify-content-end.d-sm-none.px-4
-      div.d-flex.flex-row.col-sm-8.align-self-end
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
-        div.bg-primary.p-4.mt-3.radius
-          div.text-light.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
-          small.text-gray 5 минут назад
-    div.row.px-4
-      div.d-flex.flex-row.col-sm-8.d-sm-none
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-        div.bg-gray.p-4.mt-3.radius
-          div.font-weight-bold.text-dark Вениамин Редакторович
-          div.text-secondary.border-light-bottom.pb-2 Лады
-          small.text-secondary 5 минут назад
-    div.row.justify-content-end.d-sm-none.px-4
-      div.d-flex.flex-row.col-sm-8.align-self-end
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_1.jpg" width="50" height="50" alt="avatar_1")
-        div.bg-primary.p-4.mt-3.radius
-          div.text-light.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
-          small.text-gray 3 минуты назад
-    div.row.px-4
-      div.d-flex.flex-row.col-sm-8.d-sm-none
-        img.border-radius-50.ml-3.align-self-end.d-none.d-sm-block(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-        div.bg-gray.p-4.mt-3.radius
-          div.font-weight-bold.text-dark Вениамин Редакторович
-          div.text-secondary.border-light-bottom.pb-2 o_O
-          small.text-secondary Только что
-    div.row.d-sm-none
-      form.col-12.col-sm.chat-footer.position-fixed
-        div.form-group.d-flex.border-top.mt-3
-          input.form-control-plaintext(type="text" placeholder="Напишите сообщение" id="inputMessage")
-          div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-2.ml-n-32
-            a.text-decoration-none(href="#")
-              img(src="./images/icons/cursor.png" alt="cursor")
+  div.tab-pane.pb-5.d-sm-none(id="chat" role="tabpanel" aria-labelledby="chat-tab")
+    div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
+      img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
+      div.contact-text.p-4
+        div.font-weight-bold.text-dark Вениамин Редакторович
+        small.text-secondary Онлайн
+    div.bg-gray.mt-header-height-and-spacing.p-4.radius
+      div.font-weight-bold.text-dark Вениамин Редакторович
+      div.text-secondary.border-light-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+      small.text-secondary 8 минут назад
+    div.bg-primary.align-self-end.p-4.mt-3.radius
+      div.text-light.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+      small.text-gray 5 минут назад
+    div.bg-gray.p-4.mt-3.radius
+      div.font-weight-bold.text-dark Вениамин Редакторович
+      div.text-secondary.border-light-bottom.pb-2 Лады
+      small.text-secondary 5 минут назад
+    div.bg-primary.p-4.mt-3.radius
+      div.text-light.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+      small.text-gray 3 минуты назад
+    div.bg-gray.p-4.mt-3.radius
+      div.font-weight-bold.text-dark Вениамин Редакторович
+      div.text-secondary.border-light-bottom.pb-2 o_O
+      small.text-secondary Только что
+    form.chat-footer.position-fixed
+      div.form-group.d-flex.border-top.mt-3.ml-4
+        input.form-control-plaintext(type="text" placeholder="Напишите сообщение" id="inputMessage" style="width: 72vw")
+        div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-2.ml-3
+          a.text-decoration-none(href="#")
+            img(src="./images/icons/cursor.png" alt="cursor")
   div.tab-pane(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold(for="inputContact") Контакты
+      h2.text-dark.font-weight-bold Контакты
       input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
@@ -100,7 +83,7 @@ section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.fle
                 a.stretched-link.text-decoration-none(href="#")= index.status
   div.tab-pane.active(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold Чаты
+      h2.text-dark.font-weight-bold Чаты
       input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
     div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
@@ -131,7 +114,7 @@ section.tab-content.left-side-chat.pt-5.px-4.border-right.border-gray.d-flex.fle
             a.stretched-link.text-decoration-none(href="#") Тесты упали >_&lt;
   div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold(for="inputContact") Профиль
+      h2.text-dark.font-weight-bold Профиль
       input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.mt-5.border-0.pt-4
       div.d-flex.justify-content-center

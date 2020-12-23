@@ -1,11 +1,10 @@
 doctype html
 html(lang="ru")
   include head.pug
-  body.desktop-frame
-    div.container-xxl
-      div.row
-        include header.pug
-    main.container-xxl
-      div.row
-        include left-side.pug
-        include right-side-greeting.pug
+  body.desktop-frame.container-xxl
+      main.row.no-gutters
+        div.col-sm-8.col-lg-6.col-xl-4
+          include header.pug
+          include left-side.pug
+        div.col-sm
+          include right-side-greeting.pug

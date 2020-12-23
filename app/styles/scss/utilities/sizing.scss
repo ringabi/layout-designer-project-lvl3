@@ -2,16 +2,27 @@
   height: 47px;
 }
 
-.w-560 {
-  width: 560px;
+.w-61 {
+  @media(min-width: 1200px) {
+    width: 61%;
+  }
 }
 
-.w-557 {
-  width: 557px;
-}
 
 .w-sm-416px {
   @media(min-width: 576px) {
     width: 416px;
+  }
+}
+
+@media (min-width: 576px) {
+  .w-input {
+    width: 76%;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-input {
+    width: 92%;
   }
 }

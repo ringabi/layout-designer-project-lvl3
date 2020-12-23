@@ -1,7 +1,11 @@
 
 @media(min-width: 576px) {
   .desktop-frame {
-    border: $frame-thickness solid $gray;
     background: $gray;
+
+    border-top: $frame-thickness solid $gray;
+    border-right: calc(#{$frame-thickness} - 15px) solid $gray;
+    border-bottom: $frame-thickness solid $gray;
+    border-left: calc(#{$frame-thickness} - 15px) solid $gray;
   }
 }

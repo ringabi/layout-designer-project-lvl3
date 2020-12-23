@@ -39,7 +39,7 @@
 section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom(id="nav-tabContent")
   div.tab-pane.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold(for="inputContact") Контакты
+      h2.text-dark.font-weight-bold Контакты
       input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
@@ -53,7 +53,7 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
                 a.stretched-link.text-decoration-none(href="#")= index.status
   div.tab-pane(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold(for="inputContact") Чаты
+      h2.text-dark.font-weight-bold Чаты
       input.form-control-plaintext.border-bottom.p-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessage")
     div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
@@ -84,7 +84,7 @@ section.tab-content.left-side.pt-5.px-4.border-right.border-gray.d-flex.flex-col
             a.stretched-link.text-decoration-none(href="#") Тесты упали >_&lt;
   div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
-      label.h2.text-dark.font-weight-bold(for="inputContact") Профиль
+      h2.text-dark.font-weight-bold Профиль
       input.form-control-plaintext.border-bottom.pl-4.mt-3.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.border-0.mt-82
       div.d-flex.justify-content-center

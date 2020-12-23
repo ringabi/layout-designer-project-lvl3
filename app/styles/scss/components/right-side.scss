@@ -5,7 +5,8 @@
 
 @media(min-width: 576px) {
   .right-side {
-    margin-top: -#{$header-height};
+    height: calc(100vh - (2 * #{$frame-thickness}));
+
     padding-bottom: 14px;
   }
 }

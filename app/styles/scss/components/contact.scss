@@ -2,10 +2,6 @@
   display: block;
 
   margin: 0;
-  
-  max-width: 416px; 
-  width: calc(100vw - 3rem);
-  height: 91px;
 
   background: $body-bg;
   color: $dark;
@@ -37,11 +33,5 @@
 
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-}
-
-@media(min-width: 576px) {
-  .contact {  
-    width: 416px;
   }
 }
