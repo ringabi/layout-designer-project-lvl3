@@ -7997,6 +7997,10 @@ a.text-gray:hover, a.text-gray:focus {
   .chat-header {
     width: 64%; } }
 
+@media (min-width: 1439.98px) {
+  .chat-header {
+    width: 64.4444%; } }
+
 @media (min-width: 1600px) {
   .chat-header {
     width: 38.28125%;
@@ -8068,6 +8072,10 @@ a.text-gray:hover, a.text-gray:focus {
 @media (min-width: 1200px) {
   .w-61 {
     width: 61%; } }
+
+@media (min-width: 1200px) {
+  .w-62 {
+    width: 62%; } }
 
 @media (min-width: 576px) {
   .w-sm-416px {
