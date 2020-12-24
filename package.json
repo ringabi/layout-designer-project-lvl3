@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "third educational project 'Messenger Hexlet Chat'",
-  "main": "./dist/index.html",
+  "main": "./build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

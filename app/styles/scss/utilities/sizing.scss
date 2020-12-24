@@ -8,6 +8,12 @@
   }
 }
 
+.w-62 {
+  @media(min-width: 1200px) {
+    width: 62%;
+		        }
+}
+
 
 .w-sm-416px {
   @media(min-width: 576px) {
