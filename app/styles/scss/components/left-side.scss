@@ -2,7 +2,7 @@
 .left-side-chat {
   height: 100vh;
 
-  background: white;
+  background: $white;
 
   padding-bottom: calc(#{$header-height} + 3rem);
 
@@ -20,7 +20,7 @@
 .left-side {
   height: 100vh;
 
-  background: white;
+  background: $white;
 
   padding-bottom: #{$header-height};
 

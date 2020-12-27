@@ -36,11 +36,11 @@
     }],
   }
 
-section.tab-content.left-side.pt-5.px-2.px-xl-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom(id="nav-tabContent")
+section.tab-content.left-side.pt-5.px-2.px-sm-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom(id="nav-tabContent")
   div.tab-pane.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     form.form-group
       h2.text-dark.font-weight-bold Контакты
-      input.form-control-plaintext.border-bottom.p-4.mt-4.h-47(type="search" placeholder="Поиск по контактам" id="inputContact")
+      input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
@@ -48,44 +48,44 @@ section.tab-content.left-side.pt-5.px-2.px-xl-4.border-right.border-gray.d-flex.
            div.d-flex.flex-row.align-items-center.position-relative
             img.border-radius-50.ml-3(src=index.avatar width="50" height="50" alt="avatar")
             div.contact-text.p-4.d-flex.flex-column
-              a.font-weight-bold(href="#")= index.name
+              a.font-weight-bold.text-dark.hover-text-light(href="#")= index.name
               small.d-block.text-truncate
-                a.stretched-link.text-decoration-none(href="#")= index.status
+                a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="#")= index.status
   div.tab-pane(id="chats" role="tabpanel" aria-labelledby="chats-tab")
     form.form-group
       h2.text-dark.font-weight-bold Чаты
-      input.form-control-plaintext.border-bottom.p-4.mt-4.h-47(type="search" placeholder="Поиск по сообщениям" id="inputMessage")
+      input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputMessage")
     div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
         img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
         div.chat-text.p-4
-          a.d-flex.justify-content-between(href="./chat.html")
+          a.d-flex.justify-content-between.text-dark.hover-text-light(href="./chat.html")
             div.font-weight-bold Вениамин Редакторович
             small.text-secondary.pr-3 11:45
           small.d-block.text-truncate.pr-3
-            a.stretched-link.text-decoration-none(href="./chat.html") o_O
+            a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="./chat.html") o_O
     div.chat.mt-3.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
         img.border-radius-50.ml-3(src="./images/avatar_2.jpg" width="50" height="50" alt="avatar_2")
         div.chat-text.p-4
-          a.d-flex.justify-content-between(href="#")
+          a.d-flex.justify-content-between.text-dark.hover-text-light(href="#")
             div.font-weight-bold Джедай Падаванов
             small.text-secondary.pr-3 10:12
           small.d-block.text-truncate.pr-3
-            a.stretched-link.text-decoration-none(href="#") Привет, скоро третий проект? Уже скоро надо будет выложить
+            a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="#") Привет, скоро третий проект? Уже скоро надо будет выложить
     div.chat.mt-3.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
         img.border-radius-50.ml-3(src="./images/avatar_3.jpg" width="50" height="50" alt="avatar_3")
         div.chat-text.p-4
-          a.d-flex.justify-content-between(href="#")
+          a.d-flex.justify-content-between.text-dark.hover-text-light(href="#")
             div.font-weight-bold Алексей Примадонин
             small.text-secondary.pr-3 08:53
           small.d-block.text-truncate.pr-3
-            a.stretched-link.text-decoration-none(href="#") Тесты упали >_&lt;
+            a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="#") Тесты упали >_&lt;
   div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
     form.form-group
       h2.text-dark.font-weight-bold Профиль
-      input.form-control-plaintext.border-bottom.pl-4.mt-4.h-47(type="search" placeholder="Поиск по сообщениям" id="inputText")
+      input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.border-0.mt-82
       div.d-flex.justify-content-center
         img.card-img-center.border-radius-100(src="./images/avatar_1.jpg" alt="domovenock" width="90" height="90")

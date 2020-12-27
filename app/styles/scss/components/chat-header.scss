@@ -1,11 +1,9 @@
 .chat-header {
-  height: 91px;
-  
   top: 0;
   right: 0;
   left: 0;
 
-  background: white;
+  background: $white;
 
   z-index: 9999;
 }
@@ -16,7 +14,7 @@
     right: $frame-thickness;
     left: auto;
 
-    width: 31.25vw;
+    width: 31.25%;
   }
 }
 
@@ -40,8 +38,9 @@
 
 @media (min-width: 1600px) {
   .chat-header {
-    width: 38.28125%;
-    right: calc((100vw - #{map-get($container-max-widths, xxl)}) / 2 + 2 * #{$frame-thickness});
-    left: calc((100vw - #{map-get($container-max-widths, xxl)}) / 2 + 2 * #{$frame-thickness} + #{$width-header-desktop});
+    width: auto;
+
+    right: calc((100vw - #{map-get($container-max-widths, xxl)}) / 2 + #{$frame-thickness});
+    left: calc((100vw - #{map-get($container-max-widths, xxl)}) / 2 + #{$frame-thickness} + (#{map-get($container-max-widths, xxl)} - 2 * #{$frame-thickness}) / 3);
   }
 }

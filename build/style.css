@@ -7869,7 +7869,6 @@ a.text-gray:hover, a.text-gray:focus {
   left: 0;
   right: 0;
   z-index: 9997;
-  height: 4.5rem;
   background: #4545a5; }
 
 @media (min-width: 576px) {
@@ -7878,7 +7877,7 @@ a.text-gray:hover, a.text-gray:focus {
 
 .left-side-chat {
   height: 100vh;
-  background: white;
+  background: #fff;
   padding-bottom: calc(4.5rem + 3rem); }
   .left-side-chat {
     -ms-overflow-style: none;
@@ -7895,7 +7894,7 @@ a.text-gray:hover, a.text-gray:focus {
 
 .left-side {
   height: 100vh;
-  background: white;
+  background: #fff;
   padding-bottom: 4.5rem; }
   .left-side {
     -ms-overflow-style: none;
@@ -7911,7 +7910,7 @@ a.text-gray:hover, a.text-gray:focus {
     height: calc(100vh - (4.5rem + 2 * 1.5rem)); } }
 
 .right-side {
-  background: white; }
+  background: #fff; }
 
 @media (min-width: 576px) {
   .right-side {
@@ -7920,7 +7919,7 @@ a.text-gray:hover, a.text-gray:focus {
 
 .right-side-chat {
   height: calc(100vh - (2 * 1.5rem));
-  background: white; }
+  background: #fff; }
   .right-side-chat {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -7939,14 +7938,10 @@ a.text-gray:hover, a.text-gray:focus {
   background: #fff;
   color: #343a40;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
-  .contact div > a {
-    color: #343a40; }
-  .contact small > a {
-    color: #6c757d; }
-  .contact :hover > div > a {
-    color: #fbfbfb; }
-  .contact :hover > small > a, .contact :hover > .text-truncate {
-    color: #efefef; }
+  .contact :hover > .hover-text-light {
+    color: #fbfbfb !important; }
+  .contact :hover > .hover-text-gray, .contact :hover > .text-truncate {
+    color: #efefef !important; }
   .contact :hover {
     background: #4545a5; }
   .contact > .contact-text {
@@ -7961,12 +7956,10 @@ a.text-gray:hover, a.text-gray:focus {
   background: #fff;
   color: #343a40;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08)); }
-  .chat div > a {
-    color: #343a40; }
-  .chat small > a {
-    color: #6c757d; }
-  .chat :hover > a, .chat :hover > .text-truncate {
-    color: #fbfbfb; }
+  .chat :hover > .hover-text-light {
+    color: #fbfbfb !important; }
+  .chat :hover > .hover-text-gray, .chat :hover > .text-truncate {
+    color: #efefef !important; }
   .chat :hover {
     background: #4545a5; }
   .chat .chat-text {
@@ -7975,11 +7968,10 @@ a.text-gray:hover, a.text-gray:focus {
     width: 77vw; }
 
 .chat-header {
-  height: 91px;
   top: 0;
   right: 0;
   left: 0;
-  background: white;
+  background: #fff;
   z-index: 9999; }
 
 @media (min-width: 576px) {
@@ -7987,7 +7979,7 @@ a.text-gray:hover, a.text-gray:focus {
     top: 1.5rem;
     right: 1.5rem;
     left: auto;
-    width: 31.25vw; } }
+    width: 31.25%; } }
 
 @media (min-width: 992px) {
   .chat-header {
@@ -8003,12 +7995,12 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 1600px) {
   .chat-header {
-    width: 38.28125%;
-    right: calc((100vw - 1540px) / 2 + 2 * 1.5rem);
-    left: calc((100vw - 1540px) / 2 + 2 * 1.5rem + 29rem); } }
+    width: auto;
+    right: calc((100vw - 1540px) / 2 + 1.5rem);
+    left: calc((100vw - 1540px) / 2 + 1.5rem + (1540px - 2 * 1.5rem) / 3); } }
 
 .chat-footer {
-  background: white;
+  background: #fff;
   right: 0;
   left: 0;
   bottom: 4.5rem;
@@ -8019,11 +8011,11 @@ a.text-gray:hover, a.text-gray:focus {
     bottom: 1.5rem;
     right: 1.5rem;
     left: auto;
-    width: 31.25vw; } }
+    width: 31.25%; } }
 
 @media (min-width: 992px) {
   .chat-footer {
-    width: 47.58vw; } }
+    width: 47.58%; } }
 
 @media (min-width: 1200px) {
   .chat-footer {
@@ -8031,9 +8023,9 @@ a.text-gray:hover, a.text-gray:focus {
 
 @media (min-width: 1600px) {
   .chat-footer {
-    width: 38.28125%;
-    right: calc((100vw - 1540px) / 2 + 2 * 1.5rem);
-    left: calc((100vw - 1540px) / 2 + 2 * 1.5rem + 29rem); } }
+    width: auto;
+    right: calc((100vw - 1540px) / 2 + 1.5rem);
+    left: calc((100vw - 1540px) / 2 + 1.5rem + (1540px - 2 * 1.5rem) / 3); } }
 
 .filter-invert-100 {
   filter: invert(100%); }
@@ -8060,8 +8052,8 @@ a.text-gray:hover, a.text-gray:focus {
 .border-radius-50 {
   border-radius: 50px; }
 
-.h-47 {
-  height: 47px; }
+.w-72 {
+  width: 72vw; }
 
 @media (min-width: 1200px) {
   .w-61 {

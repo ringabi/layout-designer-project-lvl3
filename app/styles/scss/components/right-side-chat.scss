@@ -2,7 +2,7 @@
 .right-side-chat {
   height: calc(100vh - (2 * #{$frame-thickness}));
 
-  background: white;
+  background: $white;
 
   @include hide-scrollbar();
 }
