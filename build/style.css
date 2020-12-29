@@ -7896,18 +7896,19 @@ a.text-gray:hover, a.text-gray:focus {
   height: 100vh;
   background: #fff;
   padding-bottom: 4.5rem; }
-  .left-side {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: auto;
-    overflow-x: hidden; }
-  .left-side::-webkit-scrollbar {
-    display: none; }
 
 @media (min-width: 576px) {
   .left-side {
-    padding-bottom: 0;
-    height: calc(100vh - (4.5rem + 2 * 1.5rem)); } }
+    padding-bottom: 0; } }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; }
 
 .right-side {
   background: #fff; }
