@@ -2,22 +2,15 @@
   width: 72vw;
 }
 
-.w-61 {
+.w-60 {
   @media(min-width: 1200px) {
-    width: 61%;
+    width: 60%;
   }
 }
 
-.w-62 {
+.w-63 {
   @media(min-width: 1200px) {
-    width: 62%;
-		        }
-}
-
-
-.w-sm-416px {
-  @media(min-width: 576px) {
-    width: 416px;
+    width: 63%;
   }
 }
 
@@ -29,6 +22,6 @@
 
 @media (min-width: 992px) {
   .w-input {
-    width: 92%;
+    width: 93%;
   }
 }

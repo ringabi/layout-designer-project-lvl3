@@ -1,65 +1,29 @@
--
-  var contacts = {
-    "A": [{
-      name: "Алексей Примадонин",
-      status: "Онлайн",
-      avatar: "./images/avatar_3.jpg"
-    }],
-
-    "В": [{
-      name: "Вениамин Редакторович",
-      status: "Онлайн",
-      avatar: "./images/avatar_4.jpg"
-    }],
-
-    "Д": [{
-      name: "Джедай Падаванов",
-      status: "Был онлайн вчера",
-      avatar: "./images/avatar_2.jpg"
-    }],
-
-    "К": [{
-      name: "Кодовёнок Хекслетович",
-      status: "Был онлайн 3 часа назад",
-      avatar: "./images/avatar_1.jpg"
-    },
-    {
-      name: "Королева Верстальщина",
-      status: "Была онлайн вчера",
-      avatar: "./images/avatar_5.jpg"
-    }],
-
-    "П": [{
-      name: "Питонист Джангович",
-      status: "Был онлайн вчера",
-      avatar: "./images/avatar_6.jpg"
-    }],
-  }
+include contacts.pug
 
 section.tab-content.left-side-chat.pt-5.px-2.px-sm-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
-  div.tab-pane.pb-5.d-sm-none(id="chat" role="tabpanel" aria-labelledby="chat-tab")
+  div.tab-pane.pb-5.d-sm-none(id="current-chat" role="tabpanel" aria-labelledby="current-chat-tab")
     div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
       img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
       div.contact-text.p-4
         div.font-weight-bold.text-dark Вениамин Редакторович
         small.text-secondary Онлайн
-    div.bg-gray.mt-header-height-and-spacing.p-4.radius
+    div.bg-light.mt-header-height-and-spacing.p-4.radius
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-light-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+      div.text-secondary.border-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
       small.text-secondary 8 минут назад
     div.bg-primary.align-self-end.p-4.mt-3.radius
       div.text-light.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
       small.text-gray 5 минут назад
-    div.bg-gray.p-4.mt-3.radius
+    div.bg-light.p-4.mt-3.radius
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-light-bottom.pb-2 Лады
+      div.text-secondary.border-bottom.pb-2 Лады
       small.text-secondary 5 минут назад
     div.bg-primary.p-4.mt-3.radius
       div.text-light.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
       small.text-gray 3 минуты назад
-    div.bg-gray.p-4.mt-3.radius
+    div.bg-light.p-4.mt-3.radius
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-light-bottom.pb-2 o_O
+      div.text-secondary.border-bottom.pb-2 o_O
       small.text-secondary Только что
     form.chat-footer.position-fixed
       div.form-group.d-flex.border-top.mt-3.ml-4
@@ -68,23 +32,23 @@ section.tab-content.left-side-chat.pt-5.px-2.px-sm-4.border-right.border-gray.d-
           a.text-decoration-none(href="#")
             img(src="./images/icons/cursor.png" alt="cursor")
   div.tab-pane(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+    h2.text-dark.font-weight-bold Контакты    
     form.form-group
-      h2.text-dark.font-weight-bold Контакты
       input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по контактам" id="inputContact")
     each array, alphabet in contacts
       div.text-muted.mt-5= alphabet
         each index in array
           div.contact.mt-3.mb-3
-           div.d-flex.flex-row.align-items-center.position-relative
+           div.d-flex.flex-row.align-items-center
             img.border-radius-50.ml-3(src=index.avatar width="50" height="50" alt="avatar")
             div.contact-text.p-4.d-flex.flex-column
               a.font-weight-bold.text-dark.text-dark.hover-text-light(href="#")= index.name
               small.d-block.text-truncate
                 a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="#")= index.status
   div.tab-pane.active(id="chats" role="tabpanel" aria-labelledby="chats-tab")
+    h2.text-dark.font-weight-bold Чаты    
     form.form-group
-      h2.text-dark.font-weight-bold Чаты
-      input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
+      input.form-control-plaintext.border-bottom.px-4.pt-20px.pb-12px.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputMessages")
     div.chat.mt-5.mb-3
       div.d-flex.flex-row.align-items-center.position-relative
         img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
@@ -112,9 +76,9 @@ section.tab-content.left-side-chat.pt-5.px-2.px-sm-4.border-right.border-gray.d-
             small.text-secondary.pr-3 08:53
           small.d-block.text-truncate.pr-3
             a.stretched-link.text-decoration-none.text-secondary.hover-text-gray(href="#") Тесты упали >_&lt;
-  div.tab-pane.w-sm-416px(id="profile" role="tabpanel" aria-labelledby="profile-tab")
+  div.tab-pane(id="profile" role="tabpanel" aria-labelledby="profile-tab")
+    h2.text-dark.font-weight-bold Профиль    
     form.form-group
-      h2.text-dark.font-weight-bold Профиль
       input.form-control-plaintext.border-bottom.px-4.py-3.mt-3(type="search" placeholder="Поиск по сообщениям" id="inputText")
     div.card.mb-3.mt-5.border-0.pt-4
       div.d-flex.justify-content-center

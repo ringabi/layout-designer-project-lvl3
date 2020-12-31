@@ -28,32 +28,16 @@ gulp.task('svgSprite', function () {
 	.pipe(gulp.dest('build/images/sprite/'));
 });
 
-// Слежение за изменёнными файлами *.scss и *.html
-//gulp.task('watch', function () {
-//	  gulp.watch('./app/styles/scss/**/*.scss', ["sass"]);
-//	  gulp.watch('./*.html', ["html"]);
-//});
-
-// Преобразование файла app/html/index.pug в файл ./index.html
+// Преобразование файла app/html/index.pug в файл ./build/index.html
 gulp.task('html', function buildHTML() {
   return gulp.src('app/html/index.pug')
   .pipe(pug())
   .pipe(gulp.dest('./build/'))
 });
 
-// Преобразование файла app/html/chat.pug в файл ./chat.html
+// Преобразование файла app/html/chat.pug в файл ./build/chat.html
 gulp.task('html-chat', function buildHTML() {
   return gulp.src('app/html/chat.pug')
   .pipe(pug())
   .pipe(gulp.dest('./build/'))
 });
-
-// Запуск тасков по умолчанию
-//gulp.task('default', ['html', 'sass']);
-
-//function defaultTask(cb) {
-//  console.log('Привет, я твой первый таск!');
-//  cb();
-//}
-//
-//exports.default = defaultTask
