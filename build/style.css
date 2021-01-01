@@ -8098,9 +8098,9 @@ a.text-gray:hover, a.text-gray:focus {
     width: 93%; } }
 
 .bg-circle-fill {
-  background: no-repeat url("./images/icons/ellipse-fill-primary.png");
-  width: 52.5px;
-  height: 49.5px; }
+  background: no-repeat url("./ellipse-fill-primary.svg");
+  width: 42px;
+  height: 42px; }
 
 @media (min-width: 576px) {
   .bg-circle-fill {
