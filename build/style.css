@@ -8099,8 +8099,14 @@ a.text-gray:hover, a.text-gray:focus {
 
 .bg-circle-fill {
   background: no-repeat url("./images/icons/ellipse-fill-primary.png");
-  width: 53.5px;
-  height: 50px; }
+  width: 52.5px;
+  height: 49.5px; }
+
+@media (min-width: 576px) {
+  .bg-circle-fill {
+    background: no-repeat url("./images/icons/ellipse-fill-primary.png");
+    width: 53.5px;
+    height: 50px; } }
 
 .border-top {
   border-top: 1px solid #efefef !important; }
