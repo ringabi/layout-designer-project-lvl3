@@ -1,0 +1,15 @@
+.bg-circle-fill {
+  background: no-repeat url("./images/icons/ellipse-fill-primary.svg");
+
+  width: 42px;
+  height: 42px;
+}
+
+@media (min-width: 576px) {
+  .bg-circle-fill {
+    background: no-repeat url("./images/icons/ellipse-fill-primary.png");
+
+    width: 50px;
+    height: 53.5px;
+  }
+}

@@ -9,7 +9,7 @@ sass.compiler = require('node-sass');
 
 // Объединение и компиляция SASS-файлов в CSS-файл dist/style.css
 gulp.task('sass', function () {
-	  return gulp.src('app/styles/scss/*.scss')
+	  return gulp.src('app/scss/*.scss')
 	    .pipe(concat('style.scss'))
 	    .pipe(sass().on('error', sass.logError))
 	    .pipe(gulp.dest('build/'));

@@ -2,7 +2,7 @@
 
 @import 'variables';
 @import 'custom';
-@import './../../../node_modules/bootstrap/scss/bootstrap';
+@import './../../node_modules/bootstrap/scss/bootstrap';
 
 @import './mixins/hide-scrollbar';
 
@@ -16,7 +16,7 @@
 @import './components/chat-header';
 @import './components/chat-footer';
 
-@import './utilities/filter-invert';
+@import './utilities/filter';
 @import './utilities/spacing';
 @import './utilities/border-radius';
 @import './utilities/sizing';

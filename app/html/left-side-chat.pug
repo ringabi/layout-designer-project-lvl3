@@ -1,36 +1,36 @@
 include contacts.pug
 
-section.tab-content.left-side-chat.pt-5.px-2.px-sm-4.border-right.border-gray.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
+section.tab-content.left-side-chat.pt-5.px-2.px-sm-4.d-flex.flex-column.radius-sm-left-bottom.order-2(id="nav-tabContent")
   div.tab-pane.pb-5.d-sm-none(id="current-chat" role="tabpanel" aria-labelledby="current-chat-tab")
     div.chat-header.d-flex.flex-row.align-items-center.border-bottom.mb-5.radius-sm-right-top.position-fixed
       img.border-radius-50.ml-3(src="./images/avatar_4.jpg" width="50" height="50" alt="avatar_4")
-      div.contact-text.p-4
+      div.contact-text.pt-4.pl-4.pb-18px
         div.font-weight-bold.text-dark Вениамин Редакторович
         small.text-secondary Онлайн
-    div.bg-light.mt-header-height-and-spacing.p-4.radius
+    div.bg-light.mt-92px.py-4.pl-25px.pr-15px.radius.mx-4.filter-drop-shadow
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-bottom.pb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+      div.text-secondary.border-bottom.pb-2.mt-1 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и &ensp;потом в магазин. Тебе что-то захватить?
       small.text-secondary 8 минут назад
-    div.bg-primary.align-self-end.p-4.mt-3.radius
+    div.bg-primary.py-4.pr-27px.pl-25px.mt-15px.mx-4.radius.filter-drop-shadow
       div.text-light.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
       small.text-gray 5 минут назад
-    div.bg-light.p-4.mt-3.radius
+    div.bg-light.py-4.pr-22px.pl-25px.mt-15px.ml-4.mr-96px.radius.filter-drop-shadow
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-bottom.pb-2 Лады
+      div.text-secondary.border-bottom.pb-2.mt-1 Лады
       small.text-secondary 5 минут назад
-    div.bg-primary.p-4.mt-3.radius
+    div.bg-primary.py-4.pr-27px.pl-25px.mt-15px.mx-4.radius.filter-drop-shadow
       div.text-light.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
       small.text-gray 3 минуты назад
-    div.bg-light.p-4.mt-3.radius
+    div.bg-light.py-4.pr-22px.pl-25px.mt-3.ml-4.mr-96px.radius.filter-drop-shadow
       div.font-weight-bold.text-dark Вениамин Редакторович
-      div.text-secondary.border-bottom.pb-2 o_O
+      div.text-secondary.border-bottom.pb-2.mt-1 o_O
       small.text-secondary Только что
     form.chat-footer.position-fixed
-      div.form-group.d-flex.border-top.mt-3.ml-4
-        input.form-control-plaintext.w-72(type="text" placeholder="Напишите сообщение..." id="inputMessage")
-        div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-2.ml-3
+      div.form-group.d-flex.border-top
+        input.form-control-plaintext.w-72.ml-4.pt-4.pl-12px(type="text" placeholder="Напишите сообщение..." id="inputMessage")
+        div.bg-circle-fill.d-flex.justify-content-center.align-items-center.mt-2.ml-4
           a.text-decoration-none(href="#")
-            img(src="./images/icons/cursor.png" alt="cursor")
+            img(src="./images/icons/cursor.png" alt="cursor" width="21" height="21")
   div.tab-pane(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     h2.text-dark.font-weight-bold Контакты    
     form.form-group
