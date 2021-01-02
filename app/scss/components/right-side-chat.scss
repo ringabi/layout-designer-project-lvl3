@@ -1,13 +1,11 @@
-
 .right-side-chat {
   height: calc(100vh - (2 * #{$frame-thickness}));
-
   background: $white;
 
   @include hide-scrollbar();
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .right-side-chat {
     padding-bottom: 103px;
   }

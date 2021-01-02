@@ -1,15 +1,16 @@
+
 .w-72 {
   width: 72vw;
 }
 
 .w-60 {
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     width: 60%;
   }
 }
 
 .w-63 {
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     width: 63%;
   }
 }

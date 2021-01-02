@@ -1,10 +1,10 @@
+
 @mixin hide-scrollbar() {
   & {
     -ms-overflow-style: none;
     scrollbar-width: none;
-
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   &::-webkit-scrollbar {

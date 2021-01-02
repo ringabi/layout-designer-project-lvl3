@@ -3,7 +3,7 @@
   background: $white;
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .right-side {
     height: calc(100vh - (2 * #{$frame-thickness}));
 

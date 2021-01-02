@@ -2,31 +2,28 @@
 .left-side-chat {
   height: 100vh;
 
-  background: $white;
-
   padding-bottom: calc(#{$header-height} + 3rem);
+  background: $white;
 
   @include hide-scrollbar();
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .left-side-chat {
-    padding-bottom: 0;
-    
     height: calc(100vh - (#{$header-height} + 2 * #{$frame-thickness}));
+
+    padding-bottom: 0;
   }
 }
 
 .left-side {
   height: 100vh;
 
-  background: $white;
-
   padding-bottom: #{$header-height};
-
+  background: $white;
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .left-side {
     padding-bottom: 0;
   }

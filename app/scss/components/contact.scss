@@ -2,17 +2,16 @@
   display: block;
 
   margin: 0;
-
-  background: $white;
   color: $dark;
-
-  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.08));
+  background: $white;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.08));
 
   & :hover > .hover-text-light {
     color: $light !important;
   }
 
-  & :hover > .hover-text-gray, :hover > .text-truncate {
+  & :hover > .hover-text-gray,
+  :hover > .text-truncate {
     color: $gray !important;
   }
 
